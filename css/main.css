@@ -123,10 +123,14 @@ body {
 }
 
 /* BUTTON */
-.button-primary {
+.button{
   font-family: inherit;
-  font-weight: 700;
   font-size: 16px;
+  cursor: pointer;
+}
+.button.primary {
+  
+  font-weight: 700;
   line-height: 1.87;
   color: var(--white-color);
   background-color: var(--accent-color);
@@ -134,21 +138,25 @@ body {
   letter-spacing: 0.06em;
 }
 
-.button-secondary {
-  font-family: inherit;
+.button.secondary {
+  
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.62;
   /* identical to box height, or 162% */
-  text-align: center;
+  /* text-align: center; */
   color: var(--title-color);
   background-color: var(--secondary-background-color);
 }
 
-.button-secondary:hover,
-.button-secondary:focus {
+.button.secondary:hover,
+.button.secondary:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+}
+
+.button.primary:hover,
+.button.primary:focus{
+  color: var(--primary-text-color);
 }
 
 /* PORTFOLIO */
@@ -182,10 +190,7 @@ body {
   color: green;
 }
 
-.footer-address.link:hover,
-.footer-address.link:focus {
-  color: var(--accent-color);
-}
+
 
 .footer-tel.link {
   /* color: rgba(255, 255, 255, 0.6); */
