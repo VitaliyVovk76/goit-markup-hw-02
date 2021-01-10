@@ -210,7 +210,7 @@ body {
   color: var(--link-footer-color);
 }
 
-.footer-tel.link:hover,
-.footer-tel.link:focus {
+.footer-tel:hover,
+.footer-tel:focus {
   color: var(--accent-color);
 }
