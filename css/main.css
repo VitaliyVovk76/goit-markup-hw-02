@@ -21,10 +21,12 @@
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   color: var(--text-primary-color);
   background-color: var(--background-primary-color);
   letter-spacing: 0.03em;
-  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  
 }
 
 
@@ -71,7 +73,6 @@ body {
 
 .header .link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -112,7 +113,7 @@ body {
 /* FEATURE */
 .feature-title {
   font-weight: 700;
-  font-size: 14px;
+  
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-color);
@@ -120,7 +121,6 @@ body {
 
 .feature-text {
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
 }
 
@@ -198,7 +198,6 @@ body {
 .footer-address, 
 .footer-tel{
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.7;
 }
 
