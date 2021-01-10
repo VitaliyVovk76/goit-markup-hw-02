@@ -15,6 +15,7 @@
 
   --background-primary-color: #e5e5e5;
   --background-secondary-color: #f5f4fa;
+  --background-footer-color: #2F303A;
 
   --accent-color: #2196f3;
 }
@@ -23,13 +24,22 @@ body {
   color: var(--text-primary-color);
   background-color: var(--background-primary-color);
   letter-spacing: 0.03em;
-
   font-family: "Roboto", sans-serif;
 }
 
-/* сбрасывает базовые стили списка*/
+
+/* сбрасывает базовые стили*/
 .list {
   list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.address {
+  font-style: normal;
 }
 
 /* HEADER */
@@ -48,13 +58,9 @@ body {
 }
 
 .logo-white {
-  /* color: var(--title-backdrop-color); */
-  color: green;
+  color: var(--title-backdrop-color);
 }
 
-.link {
-  text-decoration: none;
-}
 .site-nav .link {
   color: var(--title-color);
 }
@@ -80,6 +86,10 @@ body {
 }
 
 /* HERO */
+.hero{
+  background-color: var(--background-footer-color);
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -87,8 +97,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* color: var(--title-backdrop-color); */
-  color: green;
+  color: var(--title-backdrop-color);
 }
 
 /* SECTION */
@@ -139,6 +148,7 @@ body {
 .button.primary {
   font-weight: 700;
   line-height: 1.87;
+  text-align: center;
   color: var(--button-primary-color);
   background-color: var(--accent-color);
 
@@ -166,7 +176,7 @@ body {
 
 /* PORTFOLIO */
 .our-work-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -181,21 +191,23 @@ body {
 }
 
 /* FOOTER */
+.footer{
+  background-color: var(--background-footer-color);
+}
 
-.footer .link {
-  font-style: normal;
+.footer-address, 
+.footer-tel{
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
 }
-.footer-address.link {
-  /* color: var(--address-footer-color); */
-  color: green;
+
+.footer-address {
+  color: var(--address-footer-color);
 }
 
-.footer-tel.link {
-  /* color: var(--link-footer-color); */
-  color: green;
+.footer-tel {
+  color: var(--link-footer-color);
 }
 
 .footer-tel.link:hover,
