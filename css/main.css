@@ -1,21 +1,17 @@
 :root {
+
+  --primary-white-color: #ffffff; 
+
   --title-color: #212121;
-  --title-backdrop-color: #ffffff;
 
   --text-primary-color: #757575;
 
-  --link-site-nav-color: #212121;
   --link-contact-nav-color: #757575;
-  --link-footer-color: rgba(255, 255, 255, 0.6); 
-
-  --address-footer-color: #ffffff;
-
-  --button-primary-color: #ffffff;
-  --button-sacondary-color: #212121;
+  --link-footer-color: rgba(255, 255, 255, 0.6);
 
   --background-primary-color: #e5e5e5;
   --background-secondary-color: #f5f4fa;
-  --background-footer-color: #2F303A;
+  --background-footer-color: #2f303a;
 
   --accent-color: #2196f3;
 }
@@ -26,13 +22,13 @@ body {
   background-color: var(--background-primary-color);
   letter-spacing: 0.03em;
   font-size: 14px;
-  
 }
-
 
 /* сбрасывает базовые стили*/
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .link {
@@ -43,11 +39,49 @@ body {
 .address {
   font-style: normal;
 }
+/* END */
+
+
+/* BUTTON */
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button.primary {
+  font-weight: 700;
+  line-height: 1.87;
+  text-align: center;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  letter-spacing: 0.06em;
+}
+
+.button.secondary {
+  font-weight: 500;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--title-color);
+  background-color: var(--background-secondary-color);
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  color: var(--primary-white-color);
+}
+/* BUTTON END */
 
 /* HEADER */
 
 .logo {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -60,7 +94,7 @@ body {
 }
 
 .logo-white {
-  color: var(--title-backdrop-color);
+  color: var(--primary-white-color);
 }
 
 .site-nav .link {
@@ -85,9 +119,10 @@ body {
 .link.current {
   color: var(--accent-color);
 }
+/* HEADER END */
 
 /* HERO */
-.hero{
+.hero {
   background-color: var(--background-footer-color);
 }
 
@@ -98,8 +133,9 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--title-backdrop-color);
+  color: var(--primary-white-color);
 }
+/* HERO END */
 
 /* SECTION */
 .section-title {
@@ -110,11 +146,13 @@ body {
   color: var(--title-color);
 }
 
+
 /* FEATURE */
 .feature-title {
   font-weight: 700;
-  
+  font-size: inherit;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
 }
@@ -123,59 +161,30 @@ body {
   font-weight: 400;
   line-height: 1.71;
 }
+/* FEATURE  END*/
 
-/* OUR-TEAM */
-.our-time-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  color: var(--title-color);
-}
-
-.our-time-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-
-}
-
-/* BUTTON */
-.button {
-  font-family: inherit;
-  font-size: 16px;
-  cursor: pointer;
-}
-.button.primary {
-  font-weight: 700;
-  line-height: 1.87;
-  text-align: center;
-  color: var(--button-primary-color);
-  background-color: var(--accent-color);
-
-  letter-spacing: 0.06em;
-}
-
-.button.secondary {
-  font-weight: 500;
-  line-height: 1.62;
-  text-align: center;
-  color: var(--title-color);
+/* TEAM */
+.time{
   background-color: var(--background-secondary-color);
 }
 
-.button.secondary:hover,
-.button.secondary:focus {
-  color: var(--white-color);
-  background-color: var(--accent-color);
+.time-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--title-color);
 }
 
-.button.primary:hover,
-.button.primary:focus {
-  color: var(--text-primary-color);
+.time-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
 }
+/* OUR-TEAM END*/
+
 
 /* PORTFOLIO */
-.our-work-title {
+.works-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -183,26 +192,27 @@ body {
   color: var(--title-color);
 }
 
-.our-work-text {
+.works-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   color: var(--text-primary-color);
 }
+/* PORTFOLIO END*/
 
 /* FOOTER */
-.footer{
+.footer {
   background-color: var(--background-footer-color);
 }
 
-.footer-address, 
-.footer-tel{
+.footer-address,
+.footer-tel {
   font-weight: 400;
   line-height: 1.7;
 }
 
 .footer-address {
-  color: var(--address-footer-color);
+  color: var(--primary-white-color);
 }
 
 .footer-tel {
@@ -213,3 +223,4 @@ body {
 .footer-tel:focus {
   color: var(--accent-color);
 }
+/* FOOTER END*/
